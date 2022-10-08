@@ -1,0 +1,24 @@
+/* ---------- REGISTER ----------- */
+
+.fieldRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 300px;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  border: none;
+  min-height: 100vh;
+}
+
+.registerLegend {
+  font-size: 30px;
+}
+
+.registerFormu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}

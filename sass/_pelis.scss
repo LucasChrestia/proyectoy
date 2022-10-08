@@ -1,0 +1,266 @@
+/*********** PELIS *************/
+.pelisGrid {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 60px repeat(10, 270px) 60px repeat(10, 270px);
+  grid-template-areas:
+    "pelisGenero_01"
+    "peli_01"
+    "peli_02"
+    "peli_03"
+    "peli_04"
+    "peli_05"
+    "peli_06"
+    "peli_07"
+    "peli_08"
+    "peli_09"
+    "peli_10"
+    "pelisGenero_02"
+    "peli_11"
+    "peli_12"
+    "peli_13"
+    "peli_14"
+    "peli_15"
+    "peli_16"
+    "peli_17"
+    "peli_18"
+    "peli_19"
+    "peli_20";
+  align-items: center;
+  justify-items: center;
+
+  img {
+    width: 140px;
+    height: 180px;
+  }
+
+  p {
+    width: 180px;
+    color: white;
+    margin: 0;
+  }
+
+  h2 {
+    color: rgb(239, 223, 104);
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+.pelisGenero_01 {
+  grid-area: pelisGenero_01;
+  color: white;
+  padding-top: 25px;
+}
+
+.peli_01 {
+  grid-area: peli_01;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 247.2px;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_02 {
+  @extend .peli_01;
+  grid-area: peli_02;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_03 {
+  @extend .peli_01;
+  grid-area: peli_03;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_04 {
+  @extend .peli_01;
+  grid-area: peli_04;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_05 {
+  @extend .peli_01;
+  grid-area: peli_05;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_06 {
+  @extend .peli_01;
+  grid-area: peli_06;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_07 {
+  @extend .peli_01;
+  grid-area: peli_07;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_08 {
+  @extend .peli_01;
+  grid-area: peli_08;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_09 {
+  @extend .peli_01;
+  grid-area: peli_09;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_10 {
+  @extend .peli_01;
+  grid-area: peli_10;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.pelisGenero_02 {
+  grid-area: pelisGenero_02;
+  font-size: 40px;
+  color: white;
+  padding-top: 25px;
+}
+
+.peli_11 {
+  @extend .peli_01;
+  grid-area: peli_11;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_12 {
+  @extend .peli_01;
+  grid-area: peli_12;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_13 {
+  @extend .peli_01;
+  grid-area: peli_13;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_14 {
+  @extend .peli_01;
+  grid-area: peli_14;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_15 {
+  @extend .peli_01;
+  grid-area: peli_15;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_16 {
+  @extend .peli_01;
+  grid-area: peli_16;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_17 {
+  @extend .peli_01;
+  grid-area: peli_17;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_18 {
+  @extend .peli_01;
+  grid-area: peli_18;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_19 {
+  @extend .peli_01;
+  grid-area: peli_19;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}
+
+.peli_20 {
+  @extend .peli_01;
+  grid-area: peli_20;
+  img:hover {
+    transform: translate(0, -20px) scale(1.15);
+    transition-property: all;
+    transition-duration: 1.5s;
+  }
+}

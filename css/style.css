@@ -1,5 +1,5 @@
+/********* GENERALES ***************/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-
 html {
   font-family: "Quicksand", sans-serif;
 }
@@ -9,17 +9,13 @@ html {
   margin: 0;
 }
 
-/******************************** MOBILE FIRST ***********************************/
-
 /****** NAV BAR *********/
-
 .btn-outline-success {
   color: rgb(65, 136, 236);
   border-color: rgb(65, 136, 236);
 }
 
 /******* INDEX *********/
-
 img {
   width: 150px;
 }
@@ -46,14 +42,11 @@ iframe {
   display: grid;
   grid-template-columns: repeat(6, 50px);
   grid-template-rows: repeat(4, 80px);
-  grid-template-areas:
-    "atajoImg-1 atajoImg-1 atajoImg-1 atajoImg-2 atajoImg-2 atajoImg-2"
-    "atajoImg-3 atajoImg-3 atajoImg-3 atajoImg-4 atajoImg-4 atajoImg-4"
-    "atajoImg-5 atajoImg-5 atajoImg-5 atajoImg-6 atajoImg-6 atajoImg-6"
-    "atajoImg-7 atajoImg-7 atajoImg-7 atajoImg-8 atajoImg-8 atajoImg-8";
+  grid-template-areas: "atajoImg-1 atajoImg-1 atajoImg-1 atajoImg-2 atajoImg-2 atajoImg-2" "atajoImg-3 atajoImg-3 atajoImg-3 atajoImg-4 atajoImg-4 atajoImg-4" "atajoImg-5 atajoImg-5 atajoImg-5 atajoImg-6 atajoImg-6 atajoImg-6" "atajoImg-7 atajoImg-7 atajoImg-7 atajoImg-8 atajoImg-8 atajoImg-8";
   justify-content: center;
   padding-top: 7px;
-  column-gap: 1px;
+  -moz-column-gap: 1px;
+       column-gap: 1px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -137,13 +130,20 @@ iframe {
   transition-property: all;
   transition-duration: 1.5s;
 }
-/*___________________ FOOTER _________________*/
 
+/*___________________ FOOTER _________________*/
 footer {
   display: flex;
   flex-direction: column;
   color: white;
   background-color: black;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer ul li {
+  list-style-type: none;
 }
 
 .redes {
@@ -152,7 +152,6 @@ footer {
   height: 80px;
   justify-content: center;
 }
-
 .redes img {
   width: 40px;
   margin: 10px;
@@ -163,24 +162,13 @@ footer {
   flex-direction: row;
   justify-content: center;
 }
-
 .navFooter ul {
   display: flex;
   flex-direction: row;
   padding-left: 0;
 }
-
 .navFooter ul li {
   margin: 10px;
-}
-
-footer a {
-  text-decoration: none;
-  color: white;
-}
-
-footer ul li {
-  list-style-type: none;
 }
 
 .derechosFooter {
@@ -189,7 +177,6 @@ footer ul li {
   flex-direction: column;
   align-items: center;
 }
-
 .derechosFooter p {
   font-size: 13px;
   margin-bottom: 0;
@@ -202,38 +189,33 @@ footer ul li {
   padding-bottom: 10px;
 }
 
+.footerContact a:hover {
+  color: purple;
+}
+
 /*********** PELIS *************/
 .pelisGrid {
   background-color: black;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 60px repeat(10, 270px) 60px repeat(10, 270px);
-  grid-template-areas:
-    "pelisGenero_01"
-    "peli_01"
-    "peli_02"
-    "peli_03"
-    "peli_04"
-    "peli_05"
-    "peli_06"
-    "peli_07"
-    "peli_08"
-    "peli_09"
-    "peli_10"
-    "pelisGenero_02"
-    "peli_11"
-    "peli_12"
-    "peli_13"
-    "peli_14"
-    "peli_15"
-    "peli_16"
-    "peli_17"
-    "peli_18"
-    "peli_19"
-    "peli_20";
-
+  grid-template-areas: "pelisGenero_01" "peli_01" "peli_02" "peli_03" "peli_04" "peli_05" "peli_06" "peli_07" "peli_08" "peli_09" "peli_10" "pelisGenero_02" "peli_11" "peli_12" "peli_13" "peli_14" "peli_15" "peli_16" "peli_17" "peli_18" "peli_19" "peli_20";
   align-items: center;
   justify-items: center;
+}
+.pelisGrid img {
+  width: 140px;
+  height: 180px;
+}
+.pelisGrid p {
+  width: 180px;
+  color: white;
+  margin: 0;
+}
+.pelisGrid h2 {
+  color: rgb(239, 223, 104);
+  font-size: 16px;
+  margin: 0;
 }
 
 .pelisGenero_01 {
@@ -242,7 +224,7 @@ footer ul li {
   padding-top: 25px;
 }
 
-.peli_01 {
+.peli_01, .peli_20, .peli_19, .peli_18, .peli_17, .peli_16, .peli_15, .peli_14, .peli_13, .peli_12, .peli_11, .peli_10, .peli_09, .peli_08, .peli_07, .peli_06, .peli_05, .peli_04, .peli_03, .peli_02 {
   grid-area: peli_01;
   display: flex;
   flex-direction: column;
@@ -250,136 +232,89 @@ footer ul li {
   text-align: center;
   height: 247.2px;
 }
-
-.peli_01 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+.peli_01 img:hover, .peli_20 img:hover, .peli_19 img:hover, .peli_18 img:hover, .peli_17 img:hover, .peli_16 img:hover, .peli_15 img:hover, .peli_14 img:hover, .peli_13 img:hover, .peli_12 img:hover, .peli_11 img:hover, .peli_10 img:hover, .peli_09 img:hover, .peli_08 img:hover, .peli_07 img:hover, .peli_06 img:hover, .peli_05 img:hover, .peli_04 img:hover, .peli_03 img:hover, .peli_02 img:hover {
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_02 {
   grid-area: peli_02;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
-
 .peli_02 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_03 {
   grid-area: peli_03;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_03 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_04 {
   grid-area: peli_04;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_04 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_05 {
   grid-area: peli_05;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_05 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_06 {
   grid-area: peli_06;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_06 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_07 {
   grid-area: peli_07;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_07 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_08 {
   grid-area: peli_08;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_08 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_09 {
   grid-area: peli_09;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_09 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_10 {
   grid-area: peli_10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_10 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -393,171 +328,105 @@ footer ul li {
 
 .peli_11 {
   grid-area: peli_11;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_11 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_12 {
   grid-area: peli_12;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_12 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_13 {
   grid-area: peli_13;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_13 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_14 {
   grid-area: peli_14;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_14 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_15 {
   grid-area: peli_15;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_15 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_16 {
   grid-area: peli_16;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_16 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_17 {
   grid-area: peli_17;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_17 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_18 {
   grid-area: peli_18;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_18 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_19 {
   grid-area: peli_19;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_19 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
 .peli_20 {
   grid-area: peli_20;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 247.2px;
 }
 .peli_20 img:hover {
-  transform: translate(0, -50px) scale(1.5);
+  transform: translate(0, -20px) scale(1.15);
   transition-property: all;
   transition-duration: 1.5s;
 }
 
-.pelisGrid img {
-  width: 140px;
-  height: 180px;
-}
-
-.pelisGrid p {
-  width: 180px;
-  color: white;
-  margin: 0;
-}
-
-.pelisGrid h2 {
-  color: rgb(239, 223, 104);
-  font-size: 16px;
-  margin: 0;
-}
-
 /* ---------------- SOBRE NOSOTROS --------------*/
-
 .sobrenos {
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .sobrenos h1 {
   text-align: center;
   padding: 0px 0px 60px 0px;
@@ -566,24 +435,24 @@ footer ul li {
 
 .sobrenosrow {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 20px;
-  justify-content: space-around;
 }
-
 .sobrenosrow img {
   width: 250px;
   height: 150px;
 }
 
 .preguntas {
-  width: 650px;
-  height: 150px;
   text-align: justify;
+}
+.preguntas h2 {
+  text-align: center;
 }
 
 /* ------------ EXTRAS ----------- */
-
 .extras {
   background-color: black;
   min-height: 100vh;
@@ -592,20 +461,17 @@ footer ul li {
   align-items: center;
   justify-content: space-evenly;
 }
-
 .extras img {
-  width: 600px;
+  width: 280px;
   height: 40px;
 }
 
 /* ------------- CONTACTO ----------*/
-
 .fieldContacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  height: 500px;
   justify-content: space-between;
   color: white;
   background-color: black;
@@ -615,25 +481,24 @@ footer ul li {
 
 .contactoLegend {
   font-size: 30px;
+  text-align: center;
 }
 
-.nombreFormu {
+.nombreFormu, .condiFormu, .paisFormu, .miembroFormu {
   display: flex;
   flex-direction: column;
-  width: 300px;
-}
-
-.miembroFormu {
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-  justify-content: space-evenly;
+  width: 280px;
 }
 
 .condiFormu {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.checkFormu {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .mensajeFormu {
@@ -643,7 +508,6 @@ footer ul li {
 }
 
 /* ---------- LOG IN ----------- */
-
 .fieldLogin {
   display: flex;
   flex-direction: column;
@@ -668,7 +532,6 @@ footer ul li {
 }
 
 /* ---------- REGISTER ----------- */
-
 .fieldRegister {
   display: flex;
   flex-direction: column;
@@ -693,7 +556,6 @@ footer ul li {
 }
 
 /* ------- INFO PELIS --------*/
-
 .regresar {
   display: flex;
   flex-direction: row;
@@ -703,44 +565,36 @@ footer ul li {
   align-items: center;
   background-color: black;
 }
-
 .regresar a {
   text-decoration: none;
   text-align: center;
   padding-left: 20px;
   color: rgb(43, 168, 226);
 }
-
-.regresar Img {
+.regresar img {
   width: 68px;
   height: 52px;
 }
 
-.trailerPeli iframe {
-  width: 560px;
-  height: 315px;
-}
-
 .infoPeli {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 30px 50px 30px 50px;
   background-color: black;
+  align-items: center;
 }
 
 .datosPeli {
   display: flex;
   flex-direction: column;
-  padding-left: 15px;
+  padding-top: 15px;
   justify-content: space-around;
   color: white;
 }
-
 .datosPeli p {
   text-align: justify;
 }
-
-.datosPeli h3 {
+.datosPeli h1 {
   text-transform: uppercase;
   font-size: 25px;
 }
@@ -748,10 +602,9 @@ footer ul li {
 .imdb {
   color: rgb(239, 223, 104);
 }
+
 /* _______________________________ RESPONSIVE ____________________________________________*/
-
 /**********************************  576px a 767px ***************************************/
-
 @media (min-width: 576px) {
   iframe {
     width: 500px;
@@ -762,119 +615,103 @@ footer ul li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 60px repeat(5, 270px) 60px repeat(5, 270px);
-    grid-template-areas:
-      "pelisGenero_01 ."
-      "peli_01 peli_02"
-      "peli_03 peli_04"
-      "peli_05 peli_06"
-      "peli_07 peli_08"
-      "peli_09 peli_10"
-      "pelisGenero_02 ."
-      "peli_11 peli_12"
-      "peli_13 peli_14"
-      "peli_15 peli_16"
-      "peli_17 peli_18"
-      "peli_19 peli_20";
+    grid-template-areas: "pelisGenero_01 ." "peli_01 peli_02" "peli_03 peli_04" "peli_05 peli_06" "peli_07 peli_08" "peli_09 peli_10" "pelisGenero_02 ." "peli_11 peli_12" "peli_13 peli_14" "peli_15 peli_16" "peli_17 peli_18" "peli_19 peli_20";
+  }
+  .sobrenosrow img {
+    width: 300px;
+    height: 180px;
+  }
+  .preguntas {
+    width: 500px;
+  }
+  .extras img {
+    width: 400px;
   }
 }
-
 /********************************** 768px a 991px *****************************************/
-
 @media (min-width: 768px) {
   iframe {
     width: 600px;
     height: 360px;
   }
-
   .atajos {
     display: grid;
     grid-template-columns: repeat(3, 152px);
     grid-template-rows: repeat(3, 80px);
-    grid-template-areas:
-      "atajoImg-1 atajoImg-2 atajoImg-3"
-      "atajoImg-4 atajoImg-5 atajoImg-6"
-      "atajoImg-7 none atajoImg-8";
+    grid-template-areas: "atajoImg-1 atajoImg-2 atajoImg-3" "atajoImg-4 atajoImg-5 atajoImg-6" "atajoImg-7 none atajoImg-8";
     justify-content: center;
     padding-top: 7px;
-    column-gap: 3px;
+    -moz-column-gap: 3px;
+         column-gap: 3px;
     row-gap: 3px;
   }
-
   .pelisGrid {
     background-color: black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 70px repeat(4, 270px) 70px repeat(4, 270px);
-    grid-template-areas:
-      "pelisGenero_01 pelisGenero_01 ."
-      "peli_01 peli_02 peli_03"
-      "peli_04 peli_05 peli_06"
-      "peli_07 peli_08 peli_09"
-      "peli_10 . ."
-      "pelisGenero_02 pelisGenero_02 ."
-      "peli_11 peli_12 peli_13"
-      "peli_14 peli_15 peli_16"
-      "peli_17 peli_18 peli_19"
-      "peli_20 . .";
+    grid-template-areas: "pelisGenero_01 pelisGenero_01 ." "peli_01 peli_02 peli_03" "peli_04 peli_05 peli_06" "peli_07 peli_08 peli_09" "peli_10 . ." "pelisGenero_02 pelisGenero_02 ." "peli_11 peli_12 peli_13" "peli_14 peli_15 peli_16" "peli_17 peli_18 peli_19" "peli_20 . .";
   }
-
   .pelisGenero_01 {
     justify-self: start;
     padding-left: 25px;
   }
-
   .pelisGenero_01 h1 {
     font-size: 50px;
   }
-
   .pelisGenero_02 {
     justify-self: start;
     padding-left: 25px;
   }
-
   .pelisGenero_02 h1 {
     font-size: 50px;
   }
+  .nombreFormu, .miembroFormu, .paisFormu, .condiFormu {
+    width: 300px;
+  }
+  .miembroFormu {
+    width: 300px;
+  }
+  .paisFormu {
+    width: 300px;
+  }
+  .condiFormu {
+    width: 300px;
+  }
+  .checkFormu {
+    width: 300px;
+  }
+  .extras img {
+    width: 500px;
+  }
 }
-
 /*********************************** 992px o +++ ******************************************/
-
 @media (min-width: 992px) {
   iframe {
     width: 700px;
     height: 400px;
+    padding-top: 50px;
   }
-
   .atajos {
     display: grid;
     grid-template-columns: repeat(4, 152px);
     grid-template-rows: repeat(2, 80px);
-    grid-template-areas:
-      "atajoImg-1 atajoImg-2 atajoImg-3 atajoImg-4"
-      "atajoImg-5 atajoImg-6 atajoImg-7 atajoImg-8";
+    grid-template-areas: "atajoImg-1 atajoImg-2 atajoImg-3 atajoImg-4" "atajoImg-5 atajoImg-6 atajoImg-7 atajoImg-8";
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 50px;
     padding-bottom: 15px;
-    column-gap: 5px;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
     row-gap: 5px;
+    height: 300px;
   }
-
   .pelisGrid {
     background-color: black;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 90px repeat(2, 270px) 90px repeat(2, 270px);
-    grid-template-areas:
-      "pelisGenero_01 pelisGenero_01 . . ."
-      "peli_01 peli_02 peli_03 peli_04 peli_05"
-      "peli_06 peli_07 peli_08 peli_09 peli_10"
-      "pelisGenero_02 pelisGenero_02 . . ."
-      "peli_11 peli_12 peli_13 peli_14 peli_15"
-      "peli_16 peli_17 peli_18 peli_19 peli_20";
-    /*align-items: center;
-    justify-items: center;*/
+    grid-template-areas: "pelisGenero_01 pelisGenero_01 . . ." "peli_01 peli_02 peli_03 peli_04 peli_05" "peli_06 peli_07 peli_08 peli_09 peli_10" "pelisGenero_02 pelisGenero_02 . . ." "peli_11 peli_12 peli_13 peli_14 peli_15" "peli_16 peli_17 peli_18 peli_19 peli_20";
   }
-
   footer {
     display: flex;
     flex-direction: row;
@@ -882,8 +719,56 @@ footer ul li {
     align-items: center;
     padding-top: 10px;
   }
-
   .navFooter {
     height: 44px;
   }
-}
+  .infoPeli {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  .trailerPeli iframe {
+    width: 560px;
+    height: 315px;
+  }
+  .datosPeli {
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+  .sobrenosrow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+  }
+  .sobrenosrow img {
+    width: 250px;
+    height: 150px;
+  }
+  .preguntas {
+    width: 650px;
+    padding-left: 25px;
+  }
+  .nombreFormu, .miembroFormu, .paisFormu, .condiFormu {
+    width: 400px;
+  }
+  .miembroFormu {
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-evenly;
+  }
+  .paisFormu {
+    width: 400px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .condiFormu {
+    width: 400px;
+  }
+  .checkFormu {
+    width: 400px;
+    flex-direction: row;
+  }
+  .extras img {
+    width: 600px;
+  }
+}/*# sourceMappingURL=style.css.map */

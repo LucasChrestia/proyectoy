@@ -1,0 +1,24 @@
+/* ---------- LOG IN ----------- */
+
+.fieldLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 300px;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  border: none;
+  min-height: 100vh;
+}
+
+.loginLegend {
+  font-size: 30px;
+}
+
+.loginFormu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}

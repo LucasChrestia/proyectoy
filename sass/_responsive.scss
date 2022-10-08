@@ -1,0 +1,235 @@
+/* _______________________________ RESPONSIVE ____________________________________________*/
+
+/**********************************  576px a 767px ***************************************/
+
+@media (min-width: 576px) {
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+
+  .pelisGrid {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px repeat(5, 270px) 60px repeat(5, 270px);
+    grid-template-areas:
+      "pelisGenero_01 ."
+      "peli_01 peli_02"
+      "peli_03 peli_04"
+      "peli_05 peli_06"
+      "peli_07 peli_08"
+      "peli_09 peli_10"
+      "pelisGenero_02 ."
+      "peli_11 peli_12"
+      "peli_13 peli_14"
+      "peli_15 peli_16"
+      "peli_17 peli_18"
+      "peli_19 peli_20";
+  }
+
+  .sobrenosrow img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .preguntas {
+    width: 500px;
+  }
+
+  .extras img {
+    width: 400px;
+  }
+}
+
+/********************************** 768px a 991px *****************************************/
+
+@media (min-width: 768px) {
+  iframe {
+    width: 600px;
+    height: 360px;
+  }
+
+  .atajos {
+    display: grid;
+    grid-template-columns: repeat(3, 152px);
+    grid-template-rows: repeat(3, 80px);
+    grid-template-areas:
+      "atajoImg-1 atajoImg-2 atajoImg-3"
+      "atajoImg-4 atajoImg-5 atajoImg-6"
+      "atajoImg-7 none atajoImg-8";
+    justify-content: center;
+    padding-top: 7px;
+    column-gap: 3px;
+    row-gap: 3px;
+  }
+
+  .pelisGrid {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px repeat(4, 270px) 70px repeat(4, 270px);
+    grid-template-areas:
+      "pelisGenero_01 pelisGenero_01 ."
+      "peli_01 peli_02 peli_03"
+      "peli_04 peli_05 peli_06"
+      "peli_07 peli_08 peli_09"
+      "peli_10 . ."
+      "pelisGenero_02 pelisGenero_02 ."
+      "peli_11 peli_12 peli_13"
+      "peli_14 peli_15 peli_16"
+      "peli_17 peli_18 peli_19"
+      "peli_20 . .";
+  }
+
+  .pelisGenero_01 {
+    justify-self: start;
+    padding-left: 25px;
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .pelisGenero_02 {
+    justify-self: start;
+    padding-left: 25px;
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .nombreFormu {
+    width: 300px;
+  }
+
+  .miembroFormu {
+    width: 300px;
+  }
+
+  .paisFormu {
+    width: 300px;
+  }
+
+  .condiFormu {
+    width: 300px;
+  }
+
+  .checkFormu {
+    width: 300px;
+  }
+
+  .extras img {
+    width: 500px;
+  }
+}
+
+/*********************************** 992px o +++ ******************************************/
+
+@media (min-width: 992px) {
+  iframe {
+    width: 700px;
+    height: 400px;
+    padding-top: 50px;
+  }
+
+  .atajos {
+    display: grid;
+    grid-template-columns: repeat(4, 152px);
+    grid-template-rows: repeat(2, 80px);
+    grid-template-areas:
+      "atajoImg-1 atajoImg-2 atajoImg-3 atajoImg-4"
+      "atajoImg-5 atajoImg-6 atajoImg-7 atajoImg-8";
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    column-gap: 5px;
+    row-gap: 5px;
+    height: 300px;
+  }
+
+  .pelisGrid {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 90px repeat(2, 270px) 90px repeat(2, 270px);
+    grid-template-areas:
+      "pelisGenero_01 pelisGenero_01 . . ."
+      "peli_01 peli_02 peli_03 peli_04 peli_05"
+      "peli_06 peli_07 peli_08 peli_09 peli_10"
+      "pelisGenero_02 pelisGenero_02 . . ."
+      "peli_11 peli_12 peli_13 peli_14 peli_15"
+      "peli_16 peli_17 peli_18 peli_19 peli_20";
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .navFooter {
+    height: 44px;
+  }
+
+  .infoPeli {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  .trailerPeli iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  .datosPeli {
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+
+  .sobrenosrow {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    img {
+      width: 250px;
+      height: 150px;
+    }
+  }
+
+  .preguntas {
+    width: 650px;
+    padding-left: 25px;
+  }
+
+  .nombreFormu {
+    width: 400px;
+  }
+
+  .miembroFormu {
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-evenly;
+  }
+
+  .paisFormu {
+    width: 400px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .condiFormu {
+    width: 400px;
+  }
+
+  .checkFormu {
+    width: 400px;
+    flex-direction: row;
+  }
+
+  .extras img {
+    width: 600px;
+  }
+}

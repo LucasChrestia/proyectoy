@@ -1,0 +1,119 @@
+/******* INDEX *********/
+
+img {
+  width: 150px;
+}
+
+iframe {
+  width: 300px;
+  height: 150px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.trailerGot {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.atajos {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: repeat(4, 80px);
+  grid-template-areas:
+    "atajoImg-1 atajoImg-1 atajoImg-1 atajoImg-2 atajoImg-2 atajoImg-2"
+    "atajoImg-3 atajoImg-3 atajoImg-3 atajoImg-4 atajoImg-4 atajoImg-4"
+    "atajoImg-5 atajoImg-5 atajoImg-5 atajoImg-6 atajoImg-6 atajoImg-6"
+    "atajoImg-7 atajoImg-7 atajoImg-7 atajoImg-8 atajoImg-8 atajoImg-8";
+  justify-content: center;
+  padding-top: 7px;
+  column-gap: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.atajoImg-1 {
+  grid-area: atajoImg-1;
+}
+
+.atajoImg-1:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.atajoImg-2 {
+  grid-area: atajoImg-2;
+}
+
+.atajoImg-2:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.atajoImg-3 {
+  grid-area: atajoImg-3;
+}
+
+.atajoImg-3:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.atajoImg-4 {
+  grid-area: atajoImg-4;
+}
+
+.atajoImg-4:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.atajoImg-5 {
+  grid-area: atajoImg-5;
+}
+
+.atajoImg-5:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.atajoImg-6 {
+  grid-area: atajoImg-6;
+}
+
+.atajoImg-6:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.atajoImg-7 {
+  grid-area: atajoImg-7;
+}
+
+.atajoImg-7:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}
+
+.atajoImg-8 {
+  grid-area: atajoImg-8;
+}
+
+.atajoImg-8:hover {
+  transform: scale(1.5);
+  transition-property: all;
+  transition-duration: 1.5s;
+}

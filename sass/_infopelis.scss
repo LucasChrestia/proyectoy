@@ -1,0 +1,48 @@
+/* ------- INFO PELIS --------*/
+
+.regresar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 55px;
+  align-items: center;
+  background-color: black;
+  a {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 20px;
+    color: rgb(43, 168, 226);
+  }
+  img {
+    width: 68px;
+    height: 52px;
+  }
+}
+
+.infoPeli {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px 30px 50px;
+  background-color: black;
+  align-items: center;
+}
+
+.datosPeli {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  justify-content: space-around;
+  color: white;
+  p {
+    text-align: justify;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+}
+
+.imdb {
+  color: rgb(239, 223, 104);
+}

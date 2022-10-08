@@ -1,0 +1,50 @@
+/* ------------- CONTACTO ----------*/
+
+.fieldContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+  border: none;
+  height: 700px;
+}
+
+.contactoLegend {
+  font-size: 30px;
+  text-align: center;
+}
+
+.nombreFormu {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.miembroFormu {
+  @extend .nombreFormu;
+}
+
+.paisFormu {
+  @extend .nombreFormu;
+}
+
+.condiFormu {
+  @extend .nombreFormu;
+  align-items: center;
+}
+
+.checkFormu {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mensajeFormu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
