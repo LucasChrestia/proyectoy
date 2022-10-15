@@ -40,6 +40,11 @@
   .extras img {
     width: 400px;
   }
+
+  .underconstruc img {
+    width: 400px;
+    height: 200px;
+  }
 }
 
 /********************************** 768px a 991px *****************************************/
@@ -121,6 +126,11 @@
   .extras img {
     width: 500px;
   }
+
+  .underconstruc img {
+    width: 500px;
+    height: 250px;
+  }
 }
 
 /*********************************** 992px o +++ ******************************************/
@@ -153,7 +163,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 90px repeat(2, 270px) 90px repeat(2, 270px);
     grid-template-areas:
-      "pelisGenero_01 pelisGenero_01 . . ."
+      "pelisGenero_01 pelisGenero_01 pelisGenero_01 . ."
       "peli_01 peli_02 peli_03 peli_04 peli_05"
       "peli_06 peli_07 peli_08 peli_09 peli_10"
       "pelisGenero_02 pelisGenero_02 . . ."
@@ -182,6 +192,7 @@
   .trailerPeli iframe {
     width: 560px;
     height: 315px;
+    padding-top: 0px;
   }
 
   .datosPeli {
@@ -231,5 +242,14 @@
 
   .extras img {
     width: 600px;
+  }
+
+  .underconstruc img {
+    width: 600px;
+    height: 300px;
+  }
+
+  .navbar-nav {
+    width: 700px;
   }
 }

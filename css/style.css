@@ -10,6 +10,10 @@ html {
 }
 
 /****** NAV BAR *********/
+.bg-dark {
+  background-color: black !important;
+}
+
 .btn-outline-success {
   color: rgb(65, 136, 236);
   border-color: rgb(65, 136, 236);
@@ -56,7 +60,7 @@ iframe {
 }
 
 .atajoImg-1:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -66,7 +70,7 @@ iframe {
 }
 
 .atajoImg-2:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -76,7 +80,7 @@ iframe {
 }
 
 .atajoImg-3:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -86,7 +90,7 @@ iframe {
 }
 
 .atajoImg-4:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -96,7 +100,7 @@ iframe {
 }
 
 .atajoImg-5:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -106,7 +110,7 @@ iframe {
 }
 
 .atajoImg-6:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -116,7 +120,7 @@ iframe {
 }
 
 .atajoImg-7:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -126,7 +130,7 @@ iframe {
 }
 
 .atajoImg-8:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition-property: all;
   transition-duration: 1.5s;
 }
@@ -603,6 +607,19 @@ footer ul li {
   color: rgb(239, 223, 104);
 }
 
+.underconstruc {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.underconstruc img {
+  width: 300px;
+  height: 150px;
+}
+
 /* _______________________________ RESPONSIVE ____________________________________________*/
 /**********************************  576px a 767px ***************************************/
 @media (min-width: 576px) {
@@ -626,6 +643,10 @@ footer ul li {
   }
   .extras img {
     width: 400px;
+  }
+  .underconstruc img {
+    width: 400px;
+    height: 200px;
   }
 }
 /********************************** 768px a 991px *****************************************/
@@ -684,6 +705,10 @@ footer ul li {
   .extras img {
     width: 500px;
   }
+  .underconstruc img {
+    width: 500px;
+    height: 250px;
+  }
 }
 /*********************************** 992px o +++ ******************************************/
 @media (min-width: 992px) {
@@ -710,7 +735,7 @@ footer ul li {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 90px repeat(2, 270px) 90px repeat(2, 270px);
-    grid-template-areas: "pelisGenero_01 pelisGenero_01 . . ." "peli_01 peli_02 peli_03 peli_04 peli_05" "peli_06 peli_07 peli_08 peli_09 peli_10" "pelisGenero_02 pelisGenero_02 . . ." "peli_11 peli_12 peli_13 peli_14 peli_15" "peli_16 peli_17 peli_18 peli_19 peli_20";
+    grid-template-areas: "pelisGenero_01 pelisGenero_01 pelisGenero_01 . ." "peli_01 peli_02 peli_03 peli_04 peli_05" "peli_06 peli_07 peli_08 peli_09 peli_10" "pelisGenero_02 pelisGenero_02 . . ." "peli_11 peli_12 peli_13 peli_14 peli_15" "peli_16 peli_17 peli_18 peli_19 peli_20";
   }
   footer {
     display: flex;
@@ -730,6 +755,7 @@ footer ul li {
   .trailerPeli iframe {
     width: 560px;
     height: 315px;
+    padding-top: 0px;
   }
   .datosPeli {
     padding-top: 0px;
@@ -770,5 +796,12 @@ footer ul li {
   }
   .extras img {
     width: 600px;
+  }
+  .underconstruc img {
+    width: 600px;
+    height: 300px;
+  }
+  .navbar-nav {
+    width: 700px;
   }
 }/*# sourceMappingURL=style.css.map */
